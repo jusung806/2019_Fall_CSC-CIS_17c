@@ -28,19 +28,20 @@ int main(int argc, char** argv) {
     
     //Declare Variables
     int *array;
-    int size=100;
+    int size=200;
+    int perLine=20;
     
     //Initialize/Input Data/Variables
     array=fillAry(size);
 
     //Display output
-    prntAry(array,size,10);
+    prntAry(array,size,perLine);
     
     //Sort
     markSrt(array,size);
     
     //Display output
-    prntAry(array,size,10);
+    prntAry(array,size,perLine);
     
     //Clean up dynamic memory
     delete []array;
@@ -57,6 +58,7 @@ void markSrt(int *a,int n){
                 a[i]=a[i]^a[j];
                 a[j]=a[i]^a[j];
                 a[i]=a[i]^a[j];
+                
             }
         }
     }
