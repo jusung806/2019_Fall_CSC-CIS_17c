@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     float *xOrF,*yOrC;
     int size=181;
     float tmpStrt=32,slope=5.0f/9,intrcpt=-slope*tmpStrt,delTemp=1;
-    float errVar=0.1;//Peak to Peak errors
+    float errVar=0.0f;//Peak to Peak errors
     
     //Initialize/Input Data/Variables
     xOrF=fillAry(size);//Fahrenheit Data
